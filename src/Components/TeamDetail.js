@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function TeamDetail() {
+export default function TeamDetail(props) {
   return <div></div>;
 }
 

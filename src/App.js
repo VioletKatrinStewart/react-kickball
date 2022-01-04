@@ -14,6 +14,9 @@ function App() {
         <NavLink to="/teams" exact>
           Teams
         </NavLink>
+        <NavLink to="/" exact>
+          Home
+        </NavLink>
         <NavLink to="/players" exact>
           Players
         </NavLink>
