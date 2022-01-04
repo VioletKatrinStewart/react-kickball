@@ -7,3 +7,4 @@ export default function Player() {
     </div>
   );
 }
+//in the return statement render out player detail component

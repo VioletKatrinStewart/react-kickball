@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import { NavLink, Route, Switch } from 'react-router-dom';
 import Teams from './views/Teams/Teams';
 import Players from './views/Players/Players';
-import Home from './views/Home/Home';
+import Home from './Components/Home/Home';
 import Player from './views/Player/Player';
 import Team from './views/Team/Team';
 
