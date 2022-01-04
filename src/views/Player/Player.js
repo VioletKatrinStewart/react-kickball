@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { fetchPlayersById } from '../../services/players';
+import { Link } from 'react-router-dom';
 
-export default function Player() {
+export default function Player(props) {
+  const [players, setPlayers] = useState({});
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetchPlayersById(props.match.params.id);
+      setPlayers(data[0]);
+      setLoading(false);
+    };
+    fetchData();
+  }, [props.match.params.id]);
+  if (loading) return <h1>loading</h1>;
+
   return (
     <div>
-      <h1>Player Detail</h1>
+      <h1>{players.name}</h1>
+      <h1>{players.position}</h1>
+      <h2>Teams</h2>
     </div>
   );
 }

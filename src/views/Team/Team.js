@@ -18,7 +18,6 @@ export default function Team(props) {
   return (
     //map through team.players
     <div>
-      <header>Team Detail</header>
       <h1>{team.name}</h1>
       <h2>Players</h2>
       {team.players.map((player) => (
