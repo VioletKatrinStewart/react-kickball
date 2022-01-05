@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { fetchPlayersById } from '../../services/players';
-import { Link } from 'react-router-dom';
 
 export default function Player(props) {
   const [players, setPlayers] = useState({});
